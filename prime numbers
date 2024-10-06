@@ -4,19 +4,26 @@ int main() {
     printf ("enter your integer : ");
     scanf ("%d",&n);
     
-    if (n<=1){
+    if (n<0)
+    {
+      printf("Invalid number ! Please enter a positive integer");
+    }
+    else if (n == 0 || n == 1) {
         check=0;
     }
+    else{
+
     for(i=2;i<=n/2;i++){
        if (n%i==0)
        {
            check=0;
            break;
-        }
+       }
     }
     if (check==1)
     printf("prime");
     else 
     printf("not prime");
+    }
     return 0;
 }
