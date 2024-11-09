@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main ()
+{
+	int a,b,operation;
+	printf("give your 1st integer :");
+	scanf("%d",&a);
+	printf("give your 2nd integer :");
+	scanf("%d",&b);
+	printf("enter the operator like addition =1 , subtraction =2 , multiplication = 3 , division = 4, modulo = 5 \n :");
+	scanf("%d",&operation);
+	switch(operation)
+	{
+	case 1:
+		printf("sum is %d",a+b);
+		break;
+	case 2:
+		printf("subtraction is %d",a-b);
+		break;	
+	case 3:
+		printf("product is %d",a*b);
+		break;	
+	case 4:
+		printf("division is %d",a/b);
+		break;	
+	case 5:
+		printf("modulo is %d",a%b);
+		break;
+	}
+		
+	
+	return 0;
+}
