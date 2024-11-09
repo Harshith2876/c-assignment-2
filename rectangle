@@ -2,9 +2,9 @@
 int main ()
 {
     int a,b;
-    printf("lenght of a side : ");
+    printf("lenght of a rectangle : ");
     scanf("%d",&a);
-    printf("lenght of another side : ");
+    printf("breadth of rectangle : ");
     scanf("%d",&b); 
     printf("Perimeter is %d \n", 2*(a+b));
     printf("Area is %d", a*b);
