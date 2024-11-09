@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main ()
+{	
+	int marks;
+	printf("Enter the percentage of marks :");
+	scanf("%d",&marks);
+	if (marks<=40)
+	printf("fail");
+	else if(marks>40 && marks<=60)
+	printf ("2nd class");
+	else if(marks>60 && marks<=70)
+	printf ("1st class");
+	else if (marks>70)
+	printf ("distinction");
+	return 0;
+}
